@@ -8160,8 +8160,10 @@ textarea.form-control-lg {
 }
 
 .bg-dark {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("pics/RVHome.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-black {
