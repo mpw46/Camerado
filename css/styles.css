@@ -8160,7 +8160,7 @@ textarea.form-control-lg {
 }
 
 .bg-dark {
-  background-image: url("pics/RVHome.jpg");
+  background-image: url("./pics/RVHome.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
