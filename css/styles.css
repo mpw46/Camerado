@@ -4152,6 +4152,10 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+.navbar-nav .nav-link:hover, .navbar-text:hover {
+  color: rgba(253, 238, 10, .9);
+}
+
 .navbar {
   background-color: rgba(30,78,150) !important;
 }
