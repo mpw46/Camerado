@@ -82,23 +82,71 @@
         
     
     <!-- Page Content -->
-    <div class="content">
-        <h1>Gallery</h1>
-    </div>
+    .gallery-container {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .tour-embed {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .tour-embed iframe {
+        max-width: 80%; /* Adjust width as needed */
+        height: 500px;
+        border-radius: 15px; /* Adjust this value for more/less rounding */
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow for better aesthetics */
+    }
 
+
+
+
+
+    
     <!-- Google 360 Tour -->
+
+    .gallery-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.tour-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tour-embed iframe {
+    max-width: 80%; /* Adjust width as needed */
+    height: 500px;
+    border-radius: 15px; /* Adjust this value for more/less rounding */
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow for better aesthetics */
+}
+
+    
+    
     <div class="gallery-container">
-    <h1 class="gallery-title">Explore Using Google 360 Tour</h1>
-    <div class="tour-embed">
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1739217335329!6m8!1m7!1sCAoSLEFGMVFpcE5UMm9xNXJaYnlMSzFyQjFDUFlSeFQwZlk1RndEcjU5OTctSGZ4!2m2!1d38.64667525731414!2d-120.9518962166209!3f291.2178115174644!4f-17.64698797762047!5f0.5608072325354752" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+        <h1 class="gallery-title">Explore Using Google 360 Tour</h1>
+        <div class="tour-embed">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!4v1739217335329!6m8!1m7!1sCAoSLEFGMVFpcE5UMm9xNXJaYnlMSzFyQjFDUFlSeFQwZlk1RndEcjU5OTctSGZ4!2m2!1d38.64667525731414!2d-120.9518962166209!3f291.2178115174644!4f-17.64698797762047!5f0.5608072325354752" 
                 width="100%" 
                 height="500px" 
-                frameborder="0" 
                 style="border:0;" 
-                allowfullscreen>
-        </iframe>
+                allowfullscreen 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </div>
-</div>
+
+
 
     
     <!-- Footer-->
