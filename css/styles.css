@@ -10855,3 +10855,43 @@ textarea.form-control-lg {
   width: 4rem;
   font-size: 2rem;
 }
+
+        .quote-box {
+            position: relative;
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .quote-text {
+            font-size: 18px;
+            font-style: italic;
+            min-height: 80px;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-button:hover {
+            color: #007bff;
+        }
+
+        .left {
+            left: -40px;
+        }
+
+        .right {
+            right: -40px;
+        }
