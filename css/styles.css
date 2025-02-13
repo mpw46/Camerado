@@ -10912,3 +10912,6 @@ textarea.form-control-lg {
             background-color: rgba(30,78,150);
             margin: 0;
         }
+        .bg-quote-box {
+            background-color: #fff;
+        }
