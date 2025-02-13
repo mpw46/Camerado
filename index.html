@@ -353,6 +353,20 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- Customer Quote Box -->
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="quote-box">
+                    <button class="nav-button left" onclick="prevQuote()">&#8249;</button>
+                    <p id="quote" class="quote-text">"This is the best service I have ever used!"</p>
+                    <button class="nav-button right" onclick="nextQuote()">&#8250;</button>
+                </div>
+            </div>
+        </section>
+
+
         
         <!-- Footer-->
         <footer class="py-5 bg-black">
@@ -393,5 +407,35 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+        const quotes = [
+            "\"This is the best service I have ever used!\"",
+            "\"Amazing customer support and great quality!\"",
+            "\"Highly recommend to anyone looking for reliable service.\"",
+            "\"Exceeded my expectations in every way!\"",
+            "\"A game-changer for my business!\""
+        ];
+
+        let currentIndex = 0;
+
+        function updateQuote() {
+            const quoteElement = document.getElementById("quote");
+            quoteElement.style.opacity = 0;  // Fade out effect
+            setTimeout(() => {
+                quoteElement.innerHTML = quotes[currentIndex];
+                quoteElement.style.opacity = 1;  // Fade in effect
+            }, 300);
+        }
+
+        function prevQuote() {
+            currentIndex = (currentIndex === 0) ? quotes.length - 1 : currentIndex - 1;
+            updateQuote();
+        }
+
+        function nextQuote() {
+            currentIndex = (currentIndex === quotes.length - 1) ? 0 : currentIndex + 1;
+            updateQuote();
+        }
+    </script>
     </body>
 </html>
