@@ -10866,7 +10866,7 @@ textarea.form-control-lg {
             width: 500px;
             padding: 20px;
             border-radius: 10px;
-            background-color: rgba(30,78,150);
+            background-color: #fff;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
