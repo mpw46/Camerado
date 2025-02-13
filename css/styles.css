@@ -10860,8 +10860,7 @@ textarea.form-control-lg {
         .quote-box {
             display: flex;
             align-items: center;
-            justify-content: center;
-          
+            justify-content: center;          
             position: relative;
             width: 500px;
             padding: 20px;
