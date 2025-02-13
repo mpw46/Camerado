@@ -10865,7 +10865,7 @@ textarea.form-control-lg {
             width: 500px;
             padding: 20px;
             border-radius: 10px;
-            background-color: #fff;
+            background-color: rgba(30,78,150);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
@@ -10912,5 +10912,5 @@ textarea.form-control-lg {
             margin: 0;
         }
         .bg-quote-box {
-            background-color: #fff;
+            background-color: rgba(30,78,150);
         }
