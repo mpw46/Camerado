@@ -10878,7 +10878,7 @@ textarea.form-control-lg {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: none;
+            background-color: rgba(30,78,150);
             border: none;
             font-size: 24px;
             cursor: pointer;
@@ -10886,7 +10886,7 @@ textarea.form-control-lg {
         }
 
         .nav-button:hover {
-            color: #007bff;
+            color: rgba(247,239,23);
         }
 
         .left {
