@@ -10871,8 +10871,8 @@ textarea.form-control-lg {
         }
 
         .quote-text {
+            color: #fff;
             font-size: 18px;
-            font-style: italic;
             min-height: 80px;
             transition: opacity 0.5s ease-in-out;
         }
