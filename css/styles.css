@@ -10903,8 +10903,8 @@ textarea.form-control-lg {
         .quote-box-body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
             height: 100vh;
             color: #fff;
             background-color: rgba(30,78,150);
