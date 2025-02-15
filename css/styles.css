@@ -10887,6 +10887,12 @@ textarea.form-control-lg {
             font-size: 24px;
             cursor: pointer;
             transition: 0.3s;
+            width: 40px; /* Set width */
+            height: 40px; /* Set height */
+            border-radius: 50%; /* Makes it round */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .nav-button:hover {
