@@ -10893,6 +10893,7 @@ textarea.form-control-lg {
             display: flex;
             align-items: center;
             justify-content: center;
+            line-height: 1; 
         }
 
         .nav-button:hover {
