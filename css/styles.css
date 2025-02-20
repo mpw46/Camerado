@@ -621,6 +621,10 @@ progress {
   line-height: 1;
 }
 
+.btn-lg:hover {
+  color: rgba(250,	239,	9)
+}
+
 .figure-caption {
   font-size: 0.875em;
   color: #6c757d;
