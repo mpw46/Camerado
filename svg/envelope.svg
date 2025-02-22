@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"> 
+    <!-- Background rounded rectangle -->   
+    <rect x="0" y="0" width="100" height="100" rx="20" fill="rgb(30, 78, 150)"/>  
+    <!-- Envelope Symbol -->
+    <g fill="none" stroke="white" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">  
+    <!-- Envelope body -->    
+    <rect x="25" y="30" width="50" height="35"/>      
+    <!-- Envelope flap -->     
+    <path d="M25 30 L50 47.5 L75 30"/>  
+    </g>
+</svg>
