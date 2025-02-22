@@ -202,6 +202,15 @@ ul ol {
   margin-bottom: 0;
 }
 
+ul {
+  color: #fff;
+  text-align: center;
+}
+
+ul:hover {
+  color: rgba(250, 239, 9, 1);
+}
+
 dt {
   font-weight: 700;
 }
