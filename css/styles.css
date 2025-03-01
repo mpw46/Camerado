@@ -10870,66 +10870,72 @@ footer.bg-dark {
   font-size: 2rem;
 }
 
-        .quote-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;          
-            position: relative;
-            width: 500px;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgba(30,78,150);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+.quote-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;          
+    position: relative;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(30,78,150);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-        .quote-text {
-            color: #fff;
-            font-size: 18px;
-            min-height: 80px;
-            transition: opacity 0.5s ease-in-out;
-        }
+.quote-text {
+    color: #fff;
+    font-size: 18px;
+    min-height: 80px;
+    transition: opacity 0.5s ease-in-out;
+}
 
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #fff;
-            background-color: rgba(30,78,150);
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            transition: 0.3s;
-            width: 30px; /* Set width */
-            height: 30px; /* Set height */
-            border-radius: 50%; /* Makes it round */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 1; 
-        }
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: rgba(30,78,150);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    border-radius: 50%; /* Makes it round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; 
+}
 
-        .nav-button:hover {
-            color: rgba(247,239,23);
-        }
+.nav-button:hover {
+    color: rgba(247,239,23);
+}
 
-        .left {
-            left: -60px;
-        }
+.left {
+    left: -60px;
+}
 
-        .right {
-            right: -60px;
-        }
-        .quote-box-body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-            color: #fff;
-            background-color: rgba(30,78,150);
-            margin: 0;
-        }
-        .bg-quote-box {
-            background-color: rgba(30,78,150);
-        }
+.right {
+    right: -60px;
+}
+
+.quote-box-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    background-color: rgba(30,78,150);
+    margin: 0;
+}
+
+.bg-quote-box {
+    background-color: rgba(30,78,150);
+}
+
+.btn-primary.btn-lg.px-4.me-sm-3:hover {
+  color: rgba(250, 239, 9, 1); /* Change this to your desired hover color */
+  }
