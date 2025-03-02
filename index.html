@@ -148,7 +148,7 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" action="contact.php" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -198,7 +198,7 @@
                 </div>
             </div>
         </section>     
-         <!-- Footer-->
+        <!-- Footer-->
         <footer class="py-5 bg-dark">
         <div class="container px-5">
             <div class="row">
@@ -273,5 +273,43 @@
             updateQuote();
         }
     </script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+        
+            let form = this;
+            let formData = new FormData(form);
+            let submitButton = document.getElementById("submitButton");
+        
+            // Disable button to prevent multiple submissions
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending...";
+        
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "success") {
+                    document.getElementById("submitSuccessMessage").classList.remove("d-none");
+                    document.getElementById("submitErrorMessage").classList.add("d-none");
+                    form.reset();
+                } else {
+                    document.getElementById("submitSuccessMessage").classList.add("d-none");
+                    document.getElementById("submitErrorMessage").classList.remove("d-none");
+                }
+            })
+            .catch(() => {
+                document.getElementById("submitSuccessMessage").classList.add("d-none");
+                document.getElementById("submitErrorMessage").classList.remove("d-none");
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = "Submit";
+            });
+        });
+        </script>
+        
     </body>
 </html>
