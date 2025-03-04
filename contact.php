@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = strip_tags($_POST["phone"]);
     $message = strip_tags($_POST["message"]);
 
-    $to = "your-email@example.com"; // Replace with your actual email
+    $to = "ckolly@byu.edu"; // Replace with your actual email
     $subject = "New Contact Form Submission";
     $headers = "From: " . $email . "\r\n" .
             "Reply-To: " . $email . "\r\n" .
