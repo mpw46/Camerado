@@ -10937,5 +10937,9 @@ footer.bg-dark {
 }
 
 .btn-primary.btn-lg.px-4.me-sm-3:hover {
-  color: rgba(250, 239, 9, 1); /* Change this to your desired hover color */
+  color: rgba(250, 239, 9, 1);
   }
+
+.btn-lg:hover {
+  color: rgba(250, 239, 9, 1);
+}
