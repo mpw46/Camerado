@@ -10940,6 +10940,6 @@ footer.bg-dark {
   color: rgba(250, 239, 9, 1);
   }
 
-.btn-lg:hover {
+.btn.btn-primary.btn-lg:hover {
   color: rgba(250, 239, 9, 1);
 }
