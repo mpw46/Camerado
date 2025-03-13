@@ -400,6 +400,33 @@ button:not(:disabled),
 [type=submit]:not(:disabled) {
   cursor: pointer;
 }
+<!-- CSS (Add this in your styles.css or inside <style> tag in <head>) -->
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Adds space between images */
+    }
+
+    .responsive-img {
+        width: 420px; /* Fixed size for desktop */
+        height: 315px; /* Fixed size for desktop */
+    }
+
+    /* Make images responsive on smaller screens */
+    @media (max-width: 768px) {
+        .image-container {
+            flex-direction: column; /* Stack images on top of each other */
+            align-items: center; /* Center images */
+        }
+
+        .responsive-img {
+            width: 90%; /* Adjusts width for smaller screens */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 420px; /* Ensures it doesn't exceed desktop size */
+        }
+    }
+</style>
 
 ::-moz-focus-inner {
   padding: 0;
