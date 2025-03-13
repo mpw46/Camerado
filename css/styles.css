@@ -10970,3 +10970,14 @@ footer.bg-dark {
 .btn.btn-primary.btn-lg:hover {
   color: rgba(250, 239, 9, 1);
 }
+
+.bottom{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  height: 20px;
+}
