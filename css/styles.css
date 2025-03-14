@@ -120,6 +120,48 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
+<!-- CSS (Add to your styles.css or inside a <style> tag in <head>) -->
+<style>
+    .map-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px; /* Space between map and text */
+    }
+
+    .responsive-map {
+        width: 600px; /* Fixed for desktop */
+        height: 450px; /* Fixed for desktop */
+        border: 0;
+        flex-shrink: 0;
+    }
+
+    .map-text {
+        flex: 1;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    /* Mobile Responsive Design */
+    @media (max-width: 768px) {
+        .map-container {
+            flex-direction: column; /* Stack map and text vertically */
+            align-items: center;
+            text-align: center;
+        }
+
+        .responsive-map {
+            width: 90%; /* Keep a nice size on mobile */
+            max-width: 600px; /* Prevent it from stretching too much */
+            height: 300px; /* Reduce height for better fit */
+        }
+
+        .map-text {
+            max-width: 90%;
+            margin-top: 20px;
+        }
+    }
+</style>
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
