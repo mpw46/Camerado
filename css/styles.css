@@ -120,6 +120,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
+
 <!-- CSS (Add to your styles.css or inside a <style> tag in <head>) -->
 <style>
     .map-container {
@@ -129,9 +130,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
         gap: 20px; /* Space between map and text */
     }
 
-    .responsive-map {
-        width: 600px; /* Fixed for desktop */
-        height: 450px; /* Fixed for desktop */
+    .map-frame {
+        width: 600px; /* Fixed size on desktop */
+        height: 450px; /* Fixed size on desktop */
         border: 0;
         flex-shrink: 0;
     }
@@ -150,10 +151,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
             text-align: center;
         }
 
-        .responsive-map {
-            width: 90%; /* Keep a nice size on mobile */
-            max-width: 600px; /* Prevent it from stretching too much */
-            height: 300px; /* Reduce height for better fit */
+        .map-frame {
+            width: 100%; /* Full width on mobile */
+            max-width: 600px; /* Prevents stretching beyond desktop size */
+            height: auto; /* Adjust height proportionally */
+            aspect-ratio: 4 / 3; /* Maintains aspect ratio */
         }
 
         .map-text {
