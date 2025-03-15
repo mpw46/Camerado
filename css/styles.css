@@ -8225,6 +8225,13 @@ footer.bg-dark {
   background-position: center;
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .header {
+    background-attachment: scroll;
+    background-size: cover; /* Ensures the image scales properly */
+  }
+}
   
 .bg-black {
   --bs-bg-opacity: 1;
