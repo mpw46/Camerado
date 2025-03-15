@@ -11000,3 +11000,12 @@ footer.bg-dark {
   height: 20px;
   padding: 10px;
 }
+
+.mobile-quote-box{
+  background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
