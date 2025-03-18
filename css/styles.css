@@ -722,6 +722,20 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
+/* Mobile adjustment: Remove left/right gutters */
+@media (max-width: 768px) {
+  .row {
+    --bs-gutter-x: 0; /* No horizontal gutter on mobile */
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .row > * {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .col {
   flex: 1 0 0%;
 }
